@@ -1,0 +1,1 @@
+lezilite2=$((id Num=$(i ((`datif $VE inuppecounamet

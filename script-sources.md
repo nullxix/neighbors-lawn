@@ -1,0 +1,9 @@
+#Bash
+https://github.com/ryanoasis/public-bash-scripts
+https://github.com/anilskalyane/Bash-Scripts
+https://github.com/ruanyf/simple-bash-scripts
+https://github.com/topics/useful-bash-scripts
+https://github.com/miguelgfierro/scripts
+https://github.com/MertcanGokgoz/UsefulBashScripts
+https://github.com/mitchellkrogza/linux-server-administration-scripts
+https://github.com/tntcool733/useful-shell.tnt.com
