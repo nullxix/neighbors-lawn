@@ -1,0 +1,1 @@
+42 * * * * /path/to/directory/scatter.sh

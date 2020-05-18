@@ -3,7 +3,7 @@
 SHOULDI=$((1 + RANDOM % 3))
 if [[ $SHOULDI == 1 ]]
     then
-        DELAY=$((1 + RANDOM % 15))
+        DELAY=$((1 + RANDOM % 3600))
         sleep $DELAY
         ./fertilize.py
         git add -A
