@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import local_agrostologist
 
 filebox = local_agrostologist.get().latest().research(2)

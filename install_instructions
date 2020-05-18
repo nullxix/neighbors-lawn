@@ -1,0 +1,50 @@
+I copied this from a slack thread, so it's not pretty
+
+Install python3 and mysql (google is your friend)
+
+clone the standupinator script here:
+https://github.com/nullxix/standupinator
+then paste the following lovely piece of bash code in either
+~/.bash_profile or
+~/.zsh
+(depending on which already exists)
+function standup(){
+  pushd /path/to/install/dir
+  python3 cli.py "$@"
+  popd
+}
+export -f standup
+change /path/to/install/dir to the path-name to wherever you cloned the standupinator script
+for me, that was ~/dev/standupinator (edited)
+
+-------------------------------------------------------------------------------------
+THEN, you'll want to copy+paste this other  thing into a terminal somewhere
+  |        |         |
+ V       V       V
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib mysql argparse
+
+------------------------------------------------------------------------------------------
+THEN you'll go to where you cloned the standupinator repo
+find a file names env_example.py copy that to a new file called
+env.py and then just kinda fill in the file (it's basically the same as a .env file, you put your mysql user / password)
+the mysql host is probably localhost
+the spreadsheet_id is 1Ikx7VcpKiYnlU6D-_86jpBFyF6zEu_SBe5Gf5f9zFQk
+the sheet_tab_name is "Student Standups"
+------------------------------------------------------------------------------------------
+the database name? You're gonna have to create it.
+in your terminal
+mysql -u <username>
+if you gave it a password
+mysql -u <username> -p
+if the username/password is the same as your computer username/password, you can usually just go
+mysql
+Now you're in mysql!
+create database <database-name>;
+exit;
+the semi-colons are very important
+Simple 5 step process. Send me your error messages because I definitely missed something. If you venmo me $13.27 I'll write an auto-install script that does all that for you
+If you get through everything alive, type
+standup --init
+to finish the installation (edited)
+All of this only works after mysql and python3 are installed
+Good luck, have fun!
