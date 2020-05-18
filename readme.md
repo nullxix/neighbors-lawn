@@ -8,5 +8,5 @@
 
  # FAQ
 
- **Does this require Python3?** \n
+ **Does this require Python3?**  
  Yes
